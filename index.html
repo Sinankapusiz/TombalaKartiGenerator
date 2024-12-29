@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombala Kartı</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nova+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        :root {
+            --tombalaRengi: red;
+        }
+
+        body {
+            background: #8E2DE2;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0px;
+            border: 0.3rem solid var(--tombalaRengi);
+            margin-top: 1rem;
+        }
+
+        tbody {
+            border: 0.01rem solid black;
+        }
+
+        td,
+        tr {
+            padding: 0px;
+            margin: 0px;
+            height: 80px;
+            width: 80px;
+        }
+
+        td {
+            background-color: var(--tombalaRengi);
+            border: 1px solid black;
+        }
+
+        #kartDegistir {
+            width: 736px;
+            height: 80px;
+            font-size: 2rem;
+            background-color: goldenrod;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            border: 1px solid black;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            transition:0.5s;
+        }
+        #kartDegistir:hover {
+            background-color: rgb(255, 195, 42);
+            cursor: pointer;
+        }
+
+        .tombalaBtn {
+            width: 80px;
+            height: 80px;
+            border: 0px;
+            font-size: 2rem;
+            padding: 4px 0px;
+            border: 0px;
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            color: #2a2a2a;
+            background-color: white;
+        }
+
+        .tombalaBtnRenk {
+            width: 80px;
+            height: 80px;
+            border: 0px;
+            font-size: 2rem;
+            padding: 4px 0px;
+            border: 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .renkBtn {
+            width: calc(100% / 9.5);
+            height: 100%;
+            margin: auto auto;
+            border: 1px solid;
+        }
+
+        .renkKartlari {
+            height: 80px;
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 1rem;
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            color: white;
+        }
+
+        h2 {
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="tombalakartDiv">
+            <h1>Tombala Kartınız</h1>
+            <table id="tombalaKart">
+            </table>
+            <button id="kartDegistir">Yeni Tombala Kartı</button>
+            <h2>Tombala Kartının Rengini Değiştir</h2>
+            <div class="renkKartlari">
+                <button class="renkBtn"></button>
+                <button class="renkBtn"></button>
+                <button class="renkBtn"></button>
+                <button class="renkBtn"></button>
+                <button class="renkBtn"></button>
+                <button class="renkBtn"></button>
+                <button class="renkBtn"></button>
+                <button class="renkBtn"></button>
+                <button class="renkBtn"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
