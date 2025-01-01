@@ -56,10 +56,18 @@ function yeniTombalaKartıOlustur() {
 
         [[0, "x", 0, "x", 0, "x", 0, "x", 0],
         [0, 0, "x", 0, "x", 0, "x", 0, "x"],
-        ["x", 0, 0, "x", 0, "x", 0, "x", 0]]
+        ["x", 0, 0, "x", 0, "x", 0, "x", 0]],
+
+        [["x", 0, 0, "x", 0, "x", 0, "x", 0],
+        [0, 0, "x", 0, "x", 0, "x", 0, "x"],
+        [0, "x", 0, "x", 0, "x", 0, "x", 0]],
+
+        [[0, "x", 0, "x", 0, "x", 0, "x", 0],
+        ["x", 0, "x", 0, "x", 0, "x", 0, 0],
+        [0, "x", 0, "x", 0, "x", 0, 0, "x"]]
     ];
     /** Hazır tombala tasarımlarından birini rastgele seçmek için (tombala tasarım sayısı ile 0 arasında bir sayı seçiliyor) */
-    const tombalaKartiTasarimiSecimi = Math.floor(Math.random() * (1 - 0 + 1));
+    const tombalaKartiTasarimiSecimi = Math.floor(Math.random() * (3 - 0 + 1));
     /** Seçilmiş olan tombala kartı */
     const tombalaKarti = tombalaKartTasarimKaliplari[tombalaKartiTasarimiSecimi];
     tombalaKartiRastgeleSayilariSec(tombalaKarti);

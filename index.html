@@ -15,16 +15,14 @@
 
         :root {
             --tombalaRengi: red;
+            --numaraKareBoyutu: 80px;
+            --numaraYaziBoyutu: 2rem;
         }
 
         body {
             background: #8E2DE2;
-            /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-            /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #4A00E0, #8E2DE2);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
         }
 
         table {
@@ -40,10 +38,9 @@
 
         td,
         tr {
+            /**/
             padding: 0px;
             margin: 0px;
-            height: 80px;
-            width: 80px;
         }
 
         td {
@@ -52,9 +49,10 @@
         }
 
         #kartDegistir {
-            width: 736px;
-            height: 80px;
-            font-size: 2rem;
+            /**/
+            width: 100%;
+            height: var(--numaraKareBoyutu);
+            font-size: var(--numaraYaziBoyutu);
             background-color: goldenrod;
             color: white;
             padding: 0px;
@@ -65,18 +63,20 @@
             font-family: "Roboto", serif;
             font-optical-sizing: auto;
             font-weight: 500;
-            transition:0.5s;
+            transition: 0.5s;
         }
+
         #kartDegistir:hover {
             background-color: rgb(255, 195, 42);
             cursor: pointer;
         }
 
         .tombalaBtn {
-            width: 80px;
-            height: 80px;
+            /**/
+            width: var(--numaraKareBoyutu);
+            height: var(--numaraKareBoyutu);
             border: 0px;
-            font-size: 2rem;
+            font-size: var(--numaraYaziBoyutu);
             padding: 4px 0px;
             border: 0px;
             font-family: "Roboto", serif;
@@ -84,15 +84,6 @@
             font-weight: 700;
             color: #2a2a2a;
             background-color: white;
-        }
-
-        .tombalaBtnRenk {
-            width: 80px;
-            height: 80px;
-            border: 0px;
-            font-size: 2rem;
-            padding: 4px 0px;
-            border: 0px;
         }
 
         .container {
@@ -109,7 +100,7 @@
         }
 
         .renkKartlari {
-            height: 80px;
+            height: var(--numaraKareBoyutu);
             display: flex;
             margin-top: 1rem;
         }
@@ -129,6 +120,32 @@
             font-weight: 700;
             color: white;
         }
+
+        @media only screen and (max-width: 900px) {
+            :root {
+                --numaraKareBoyutu: 76px;
+                --numaraYaziBoyutu: 1.6rem;
+            }
+        }
+        @media only screen and (max-width: 800px) {
+            :root {
+                --numaraKareBoyutu: 70px;
+                --numaraYaziBoyutu: 1.5rem;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            :root {
+                --numaraKareBoyutu: 44px;
+                --numaraYaziBoyutu: 1.3rem;
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            :root {
+                --numaraKareBoyutu: 38px;
+                --numaraYaziBoyutu: 1rem;
+            }
+        }
+        
     </style>
 </head>
 
